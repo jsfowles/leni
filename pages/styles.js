@@ -39,7 +39,7 @@ export const Div = styled('div')({
 
 export const Container = styled('div')(
   {
-    borderWidth: '0.5vw',
+    borderWidth: '0.8vw',
     background: 'black',
     position: 'absolute',
     borderRadius: '50%',
@@ -51,10 +51,10 @@ export const Container = styled('div')(
       boxShadow: '0 0 50px hotpink',
       content: '""',
       position: 'absolute',
-      top: 'calc(-1 * 0.5vw)',
-      left: 'calc(-1 * 0.5vw)',
-      height: 'calc(100% + 0.5vw * 2)',
-      width: 'calc(100% + 0.5vw * 2)',
+      top: 'calc(-1 * 0.8vw)',
+      left: 'calc(-1 * 0.8vw)',
+      height: 'calc(100% + 0.8vw * 2)',
+      width: 'calc(100% + 0.8vw * 2)',
       background:
         'linear-gradient(60deg, hotpink, #ff0084, #f80759, #5073b8, #1098ad, #07b39b, #6fba82)',
       borderRadius: '50%',
@@ -68,10 +68,16 @@ export const Container = styled('div')(
 
 export const Emotion = styled('h1')(
   {
+    position: 'absolute',
+    margin: '0px',
     fontFamily: 'Streamster',
-    color: 'hotpink',
-    textShadow: '2px 4px #1098ad',
-    padding: '0 15px'
+    color: '#F975F7',
+    transform: 'rotate(-15deg)',
+
+    WebkitTransform: 'rotate(-15deg)' /* Safari and Chrome */,
+    WebkitTextStroke: '1px #f008b7',
+    WebkitFilter: 'drop-shadow(2px 2px 20px #f008b7)',
+    zIndex: 20
   },
   props => ({ fontSize: props.fontSize })
 );

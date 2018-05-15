@@ -1,5 +1,6 @@
 {
   "name": "create-next-example-app",
+  "main": "pages/index.js",
   "scripts": {
     "dev": "next",
     "build": "next build",

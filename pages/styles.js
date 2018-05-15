@@ -77,6 +77,7 @@ export const Emotion = styled('h1')(
 );
 
 export const Main = styled('div')({
+  background: 'black',
   height: '100vh',
   width: '100vw',
   backgroundImage:

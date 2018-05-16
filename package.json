@@ -6,6 +6,9 @@
     "build": "next build",
     "start": "next start"
   },
+  "now": {
+    "alias": "eleanor"
+  },
   "dependencies": {
     "@zeit/next-css": "^0.2.0",
     "emotion": "^9.1.3",

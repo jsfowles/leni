@@ -28,7 +28,7 @@ export const Border = styled('div')({
 export const Div = styled('div')({
   position: 'relative',
   width: '80%',
-  maxWidth: '1000px',
+  maxWidth: '500px',
 
   '&:after': {
     content: '""',
@@ -86,8 +86,7 @@ export const Main = styled('div')({
   background: 'black',
   height: '100vh',
   width: '100vw',
-  backgroundImage:
-    'url("https://www.natewren.com/themes/wallpaper2/radpack/radpack_14.jpg")',
+  backgroundImage: 'url("../static/radpack_14-min.jpg")',
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   display: 'flex',

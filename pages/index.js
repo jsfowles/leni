@@ -34,7 +34,7 @@ export default class Home extends React.Component {
         <Div>
           <Container>
             <Border>
-              <Emotion fontSize={'20vw'}>
+              <Emotion fontSize={'150px'}>
                 <ReactRevealText show={this.state.show} delayMin={0}>
                   Eleanor
                 </ReactRevealText>

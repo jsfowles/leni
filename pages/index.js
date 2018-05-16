@@ -1,6 +1,9 @@
 import { Main, Div, Container, Emotion, Border } from './styles';
 import ReactRevealText from 'react-reveal-text';
 import { injectGlobal } from 'react-emotion';
+import Head from 'next/head';
+
+import stylesheet from '../styles/styles.css';
 
 injectGlobal`
 @font-face {
@@ -27,6 +30,7 @@ export default class Home extends React.Component {
   render() {
     return (
       <Main>
+        <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
         <Div>
           <Container>
             <Border>

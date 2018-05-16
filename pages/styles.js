@@ -1,6 +1,6 @@
 import styled, { keyframes, injectGlobal } from 'react-emotion';
 
-export const Bounce = keyframes`
+export const bounce = keyframes`
 0% {
   background-position: 0% 50%
 }
@@ -59,7 +59,9 @@ export const Container = styled('div')(
         'linear-gradient(60deg, hotpink, #ff0084, #f80759, #5073b8, #1098ad, #07b39b, #6fba82)',
       borderRadius: '50%',
       zIndex: 1,
-      animation: `${Bounce} 3s ease alternate infinite`,
+      WebkitAnimation: `${bounce} 3s ease alternate infinite`,
+      animation: `${bounce} 3s ease alternate infinite`,
+      animation: `${bounce} 3s ease alternate infinite`,
       backgroundSize: '300% 300%'
     }
   },

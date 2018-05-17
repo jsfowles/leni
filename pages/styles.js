@@ -25,7 +25,7 @@ export const Border = styled('div')({
   borderRadius: '50%'
 });
 
-export const Div = styled('div')({
+export const IntrinsicContainer = styled('div')({
   position: 'relative',
   width: '80%',
   maxWidth: '500px',

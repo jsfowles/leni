@@ -1,4 +1,4 @@
-import { Main, Div, Container, Emotion, Border } from './styles';
+import { Main, IntrinsicContainer, Container, Emotion, Border } from './styles';
 import ReactRevealText from 'react-reveal-text';
 import { injectGlobal } from 'react-emotion';
 import Head from 'next/head';
@@ -31,7 +31,7 @@ export default class Home extends React.Component {
     return (
       <Main>
         <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
-        <Div>
+        <IntrinsicContainer>
           <Container>
             <Border>
               <Emotion fontSize={'150px'}>
@@ -41,7 +41,7 @@ export default class Home extends React.Component {
               </Emotion>
             </Border>
           </Container>
-        </Div>
+        </IntrinsicContainer>
       </Main>
     );
   }

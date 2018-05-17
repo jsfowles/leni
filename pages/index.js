@@ -1,19 +1,22 @@
-import { Main, IntrinsicContainer, Container, Emotion, Border } from './styles';
+import * as React from 'react';
+import {
+  Main,
+  IntrinsicContainer,
+  NameContainer,
+  Name,
+  Border,
+  Container,
+  Date,
+  Born,
+  DateContainer
+} from './styles';
 import ReactRevealText from 'react-reveal-text';
 import { injectGlobal } from 'react-emotion';
-import Head from 'next/head';
-
-import stylesheet from '../styles/styles.css';
 
 injectGlobal`
-@font-face {
-  font-family: 'Streamster';
-  src: url('/static/fonts/streamster-webfont.woff');
-  src: url('/static/fonts/streamster-webfont.woff2');
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal
-}
+  html, body {
+    margin: 0;
+  }
 `;
 
 export default class Home extends React.Component {
@@ -29,20 +32,31 @@ export default class Home extends React.Component {
   }
   render() {
     return (
-      <Main>
-        <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
-        <IntrinsicContainer>
+      <React.Fragment>
+        <Main>
+          <DateContainer>
+            <Born>BORN</Born>
+            <Date fontSize={'150px'}>
+              <ReactRevealText show={this.state.show} delayMin={0}>
+                May 6th, 2018
+              </ReactRevealText>
+            </Date>
+          </DateContainer>
           <Container>
-            <Border>
-              <Emotion fontSize={'150px'}>
-                <ReactRevealText show={this.state.show} delayMin={0}>
-                  Eleanor
-                </ReactRevealText>
-              </Emotion>
-            </Border>
+            <IntrinsicContainer>
+              <NameContainer>
+                <Border>
+                  <Name fontSize={'150px'}>
+                    <ReactRevealText show={this.state.show} delayMin={0}>
+                      Eleanor
+                    </ReactRevealText>
+                  </Name>
+                </Border>
+              </NameContainer>
+            </IntrinsicContainer>
           </Container>
-        </IntrinsicContainer>
-      </Main>
+        </Main>
+      </React.Fragment>
     );
   }
 }

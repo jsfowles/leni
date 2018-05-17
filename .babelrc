@@ -1,11 +1,28 @@
 {
-  "presets": ["react"],
+  "presets": ["@babel/preset-env", "@babel/preset-react", "next/babel"],
   "plugins": [
+    ["@babel/plugin-proposal-object-rest-spread"],
+    ["transform-define"],
+    ["dotenv-import"],
+    [
+      "module-resolver",
+      {
+        "root": ["./"],
+        "alias": {
+          "@components": "./app/components",
+          "@containers": "./app/containers",
+          "@identity": "./app/identity",
+          "@lib": "./app/lib",
+          "@views": "./app/views"
+        }
+      }
+    ],
     [
       "emotion",
       {
+        "inline": true,
         "hoist": false,
-        "sourceMap": false,
+        "sourceMap": true,
         "autoLabel": true,
         "labelFormat": "[local]",
         "extractStatic": false,

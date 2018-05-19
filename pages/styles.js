@@ -66,13 +66,13 @@ export const Born = styled('h1')({
   WebkitTextFillColor: 'transparent',
   WebkitTextStroke: '4px #f5f5f5',
   fontSize: 100,
-  fontFamily: 'Roboto',
+  fontFamily: 'Titillium Web',
   fontStyle: 'italic',
   margin: 0,
   lineHeight: 1,
 
   '&:before': {
-    content: '"Chrome"',
+    content: '"BORN"',
     position: 'absolute',
     left: 0,
     top: 0,
@@ -88,7 +88,7 @@ export const Date = styled('h3')(
   {
     position: 'absolute',
     margin: '0px',
-    fontFamily: 'Roboto',
+    fontFamily: 'Mr Dafoe',
     color: '#F975F7',
     marginLeft: 150,
     marginTop: 42,
@@ -136,7 +136,7 @@ export const Name = styled('h1')(
   {
     position: 'absolute',
     margin: '0px',
-    fontFamily: 'Streamster',
+    fontFamily: 'Mr Dafoe',
     color: '#F975F7',
     transform: 'rotate(-15deg)',
 

@@ -37,7 +37,7 @@ export default class Home extends React.Component {
           <DateContainer>
             <Born>BORN</Born>
             <Date fontSize={'150px'}>
-              <ReactRevealText show={this.state.show} delayMin={0}>
+              <ReactRevealText show={this.state.show} delayMin={500}>
                 May 6th, 2018
               </ReactRevealText>
             </Date>
@@ -47,7 +47,7 @@ export default class Home extends React.Component {
               <NameContainer>
                 <Border>
                   <Name fontSize={'150px'}>
-                    <ReactRevealText show={this.state.show} delayMin={0}>
+                    <ReactRevealText show={this.state.show} delayMin={1000}>
                       Eleanor
                     </ReactRevealText>
                   </Name>

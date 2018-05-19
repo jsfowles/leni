@@ -50,25 +50,32 @@ export const Container = styled('div')({
 });
 
 export const DateContainer = styled('div')({
-  padding: '60px 0',
+  paddingTop: '60px',
+  paddingBottom: '120px',
   height: 200,
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center'
 });
 
+export const StatsContainer = styled('div')({
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center'
+});
+
 export const Born = styled('h1')({
-  width: 275,
+  width: 375,
   position: 'relative',
   backgroundImage:
     '-webkit-linear-gradient(#378DBC 0%, #B6E8F1 46%, #ffffff 50%, #32120E 54%, #FFC488 58%, #582C11 90%, #EC9B4E 100%)',
   WebkitBackgroundClip: 'text',
   WebkitTextFillColor: 'transparent',
   WebkitTextStroke: '4px #f5f5f5',
-  fontSize: 100,
+  fontSize: 120,
   fontFamily: 'Titillium Web',
   fontStyle: 'italic',
-  margin: 0,
+  marginRight: 100,
   lineHeight: 1,
 
   '&:before': {
@@ -89,14 +96,14 @@ export const Date = styled('h3')(
     position: 'absolute',
     margin: '0px',
     fontFamily: 'Mr Dafoe',
-    color: '#F975F7',
-    marginLeft: 150,
-    marginTop: 42,
+    color: '#EB219B',
+    marginLeft: 100,
+    marginTop: 35,
     transform: 'rotate(-15deg)',
     fontSize: 150,
-    WebkitTransform: 'rotate(-15deg)' /* Safari and Chrome */,
-    WebkitTextStroke: '1px #f008b7',
-    WebkitFilter: 'drop-shadow(2px 2px 20px #f008b7)',
+    WebkitTextFillColor: 'rgba(253, 90, 250, 1)',
+    textShadow: '-2px -2px 0 #FFBAF2',
+    WebkitFilter: 'drop-shadow(3px 3px 1px #441F62)',
     zIndex: 20
   },
   props => ({ fontSize: props.fontSize })
@@ -148,9 +155,40 @@ export const Name = styled('h1')(
   props => ({ fontSize: props.fontSize })
 );
 
+export const Stats = styled('h1')(
+  {
+    position: 'relative',
+    WebkitTextFillColor: 'transparent',
+    WebkitTextStroke: '0.1px #f1f1f1',
+    fontFamily: 'Righteous',
+
+    '&:after': {
+      content: '""',
+      position: 'absolute',
+      left: 0,
+      top: 0,
+      width: '100%',
+      height: '100%',
+      background:
+        'repeating-linear-gradient(0deg, rgba(255,255,255,0.05) 0px, rgba(255,255,255,0.05) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 2px)'
+    }
+  },
+  props => ({ fontSize: props.fontSize })
+);
+
+export const StatsBody = styled('h1')(
+  {
+    WebkitBackgroundClip: 'text',
+    backgroundImage:
+      '-webkit-linear-gradient(#C3BFB4 0%, #FDFCFA 50%, #E8E7E5 51%, #757172 52%, #E8E9DB 100%)',
+    WebkitFilter: 'drop-shadow(2px 2px 15px #3F59F4)'
+  },
+  props => ({ fontSize: props.fontSize })
+);
+
 export const Main = styled('div')({
   background: 'black',
-  height: '100vh',
+  height: '100%',
   width: '100vw',
   backgroundImage: 'url("../static/radpack_14-min.jpg")',
   backgroundSize: 'cover',

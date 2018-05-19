@@ -8,7 +8,10 @@ import {
   Container,
   Date,
   Born,
-  DateContainer
+  StatsBody,
+  Stats,
+  DateContainer,
+  StatsContainer
 } from './styles';
 import ReactRevealText from 'react-reveal-text';
 import { injectGlobal } from 'react-emotion';
@@ -36,7 +39,7 @@ export default class Home extends React.Component {
         <Main>
           <DateContainer>
             <Born>BORN</Born>
-            <Date fontSize={'150px'}>
+            <Date fontSize={'80px'}>
               <ReactRevealText show={this.state.show} delayMin={500}>
                 May 6th, 2018
               </ReactRevealText>
@@ -47,7 +50,7 @@ export default class Home extends React.Component {
               <NameContainer>
                 <Border>
                   <Name fontSize={'150px'}>
-                    <ReactRevealText show={this.state.show} delayMin={1000}>
+                    <ReactRevealText show={this.state.show} delayMin={1200}>
                       Eleanor
                     </ReactRevealText>
                   </Name>
@@ -55,6 +58,14 @@ export default class Home extends React.Component {
               </NameContainer>
             </IntrinsicContainer>
           </Container>
+          <StatsContainer>
+            <Stats fontSize={'80px'}>
+              <StatsBody>STATS</StatsBody>
+            </Stats>
+            <ReactRevealText show={this.state.show} delayMin={500}>
+              May 6th, 2018
+            </ReactRevealText>
+          </StatsContainer>
         </Main>
       </React.Fragment>
     );

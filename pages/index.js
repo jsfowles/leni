@@ -10,6 +10,10 @@ import {
   Born,
   StatsBody,
   Stats,
+  TheStats,
+  Red,
+  Green,
+  Blue,
   DateContainer,
   StatsContainer
 } from './styles';
@@ -59,12 +63,13 @@ export default class Home extends React.Component {
             </IntrinsicContainer>
           </Container>
           <StatsContainer>
-            <Stats fontSize={'80px'}>
-              <StatsBody>STATS</StatsBody>
+            <Stats>
+              <StatsBody fontSize={'150px'}>STATS</StatsBody>
+              <Red>I</Red>
+              <Green>I</Green>
+              <Blue>I</Blue>
             </Stats>
-            <ReactRevealText show={this.state.show} delayMin={500}>
-              May 6th, 2018
-            </ReactRevealText>
+            <TheStats>4lbs. 6oz</TheStats>
           </StatsContainer>
         </Main>
       </React.Fragment>

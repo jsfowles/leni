@@ -59,6 +59,7 @@ export const DateContainer = styled('div')({
 });
 
 export const StatsContainer = styled('div')({
+  position: 'relative',
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center'
@@ -155,23 +156,15 @@ export const Name = styled('h1')(
   props => ({ fontSize: props.fontSize })
 );
 
-export const Stats = styled('h1')(
+export const Stats = styled('div')(
   {
+    paddingTop: 100,
+    paddingBottom: 60,
     position: 'relative',
+    display: 'flex',
     WebkitTextFillColor: 'transparent',
     WebkitTextStroke: '0.1px #f1f1f1',
-    fontFamily: 'Righteous',
-
-    '&:after': {
-      content: '""',
-      position: 'absolute',
-      left: 0,
-      top: 0,
-      width: '100%',
-      height: '100%',
-      background:
-        'repeating-linear-gradient(0deg, rgba(255,255,255,0.05) 0px, rgba(255,255,255,0.05) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 2px)'
-    }
+    fontFamily: 'Righteous'
   },
   props => ({ fontSize: props.fontSize })
 );
@@ -179,6 +172,7 @@ export const Stats = styled('h1')(
 export const StatsBody = styled('h1')(
   {
     WebkitBackgroundClip: 'text',
+    margin: 0,
     backgroundImage:
       '-webkit-linear-gradient(#C3BFB4 0%, #FDFCFA 50%, #E8E7E5 51%, #757172 52%, #E8E9DB 100%)',
     WebkitFilter: 'drop-shadow(2px 2px 15px #3F59F4)'
@@ -188,9 +182,67 @@ export const StatsBody = styled('h1')(
 
 export const Main = styled('div')({
   background: 'black',
-  height: '100%',
+  position: 'relative',
+  height: '100vh',
   width: '100vw',
   backgroundImage: 'url("../static/radpack_14-min.jpg")',
   backgroundSize: 'cover',
   backgroundPosition: 'center'
+});
+
+export const Red = styled('span')({
+  fontFamily: 'Righteous',
+  fontSize: 150,
+  color: '#F10C20',
+  WebkitTextFillColor: '#F10C20',
+  WebkitTextStroke: 0,
+  WebkitFilter: 'drop-shadow(2px 2px 15px #F10C20)',
+  fontStyle: 'italic'
+});
+
+export const Green = styled('span')({
+  fontFamily: 'Righteous',
+  fontSize: 150,
+  color: '#6BFF2B',
+  WebkitTextFillColor: '#6BFF2B',
+  WebkitTextStroke: 0,
+  WebkitFilter: 'drop-shadow(2px 2px 15px #6BFF2B)',
+  fontStyle: 'italic'
+});
+
+export const Blue = styled('span')({
+  fontFamily: 'Righteous',
+  fontSize: 150,
+  color: '#3F59F4',
+  WebkitTextFillColor: '#3F59F4',
+  WebkitTextStroke: 0,
+  WebkitFilter: 'drop-shadow(2px 2px 15px #3F59F4)',
+  fontStyle: 'italic'
+});
+
+export const TheStats = styled('h3')({
+  position: 'absolute',
+  fontFamily: 'Monoton',
+  fontVariant: 'small-caps',
+  top: 40,
+  right: 80,
+
+  fontSize: 100,
+  WebkitTransform: 'skew(-15deg,-15deg)',
+  backgroundImage: '-webkit-linear-gradient(#FF0FF8 0%,  #F9F9F7 100%)',
+  WebkitBackgroundClip: 'text',
+  WebkitTextFillColor: 'transparent',
+
+  WebkitFilter: 'drop-shadow(2px 2px 20px #f008b7)',
+
+  '&:after': {
+    position: 'absolute',
+    content: '""',
+    left: 0,
+    top: 0,
+    width: 0,
+    height: 80,
+    backgroundImage: '-webkit-radial-gradient(#fff 0%, transparent 85%)',
+    zIndex: 4
+  }
 });

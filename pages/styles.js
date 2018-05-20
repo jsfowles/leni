@@ -182,6 +182,7 @@ export const StatsBody = styled('h1')(
 
 export const Main = styled('div')({
   background: 'black',
+  overflow: 'hidden',
   position: 'relative',
   height: '100vh',
   width: '100vw',

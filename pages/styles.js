@@ -112,7 +112,7 @@ export const Date = styled('h3')(
 
 export const NameContainer = styled('div')(
   {
-    borderWidth: '0.8vw',
+    borderWidth: '1vw',
     background: 'black',
     position: 'absolute',
     borderRadius: '50%',
@@ -124,10 +124,10 @@ export const NameContainer = styled('div')(
       boxShadow: '0 0 50px hotpink',
       content: '""',
       position: 'absolute',
-      top: 'calc(-1 * 0.8vw)',
-      left: 'calc(-1 * 0.8vw)',
-      height: 'calc(100% + 0.8vw * 2)',
-      width: 'calc(100% + 0.8vw * 2)',
+      top: 'calc(-1 * 1vw)',
+      left: 'calc(-1 * 1vw)',
+      height: 'calc(100% + 1vw * 2)',
+      width: 'calc(100% + 1vw * 2)',
       background:
         'linear-gradient(60deg, hotpink, #ff0084, #f80759, #5073b8, #1098ad, #07b39b, #6fba82)',
       borderRadius: '50%',
@@ -160,10 +160,10 @@ export const Stats = styled('div')(
   {
     paddingTop: 100,
     paddingBottom: 60,
+    marginRight: 115,
     position: 'relative',
     display: 'flex',
     WebkitTextFillColor: 'transparent',
-    WebkitTextStroke: '0.1px #f1f1f1',
     fontFamily: 'Righteous'
   },
   props => ({ fontSize: props.fontSize })
@@ -184,8 +184,7 @@ export const Main = styled('div')({
   background: 'black',
   overflow: 'hidden',
   position: 'relative',
-  height: '100vh',
-  width: '100vw',
+  height: '100%',
   backgroundImage: 'url("../static/radpack_14-min.jpg")',
   backgroundSize: 'cover',
   backgroundPosition: 'center'
@@ -193,7 +192,7 @@ export const Main = styled('div')({
 
 export const Red = styled('span')({
   fontFamily: 'Righteous',
-  fontSize: 150,
+  fontSize: 100,
   color: '#F10C20',
   WebkitTextFillColor: '#F10C20',
   WebkitTextStroke: 0,
@@ -203,7 +202,7 @@ export const Red = styled('span')({
 
 export const Green = styled('span')({
   fontFamily: 'Righteous',
-  fontSize: 150,
+  fontSize: 100,
   color: '#6BFF2B',
   WebkitTextFillColor: '#6BFF2B',
   WebkitTextStroke: 0,
@@ -213,7 +212,7 @@ export const Green = styled('span')({
 
 export const Blue = styled('span')({
   fontFamily: 'Righteous',
-  fontSize: 150,
+  fontSize: 100,
   color: '#3F59F4',
   WebkitTextFillColor: '#3F59F4',
   WebkitTextStroke: 0,
@@ -225,10 +224,10 @@ export const TheStats = styled('h3')({
   position: 'absolute',
   fontFamily: 'Monoton',
   fontVariant: 'small-caps',
-  top: 40,
-  right: 80,
+  top: 80,
+  right: 400,
 
-  fontSize: 100,
+  fontSize: 60,
   WebkitTransform: 'skew(-15deg,-15deg)',
   backgroundImage: '-webkit-linear-gradient(#FF0FF8 0%,  #F9F9F7 100%)',
   WebkitBackgroundClip: 'text',

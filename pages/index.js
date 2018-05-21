@@ -64,7 +64,7 @@ export default class Home extends React.Component {
           </Container>
           <StatsContainer>
             <Stats>
-              <StatsBody fontSize={'150px'}>STATS</StatsBody>
+              <StatsBody fontSize={'100px'}>STATS</StatsBody>
               <Red>I</Red>
               <Green>I</Green>
               <Blue>I</Blue>

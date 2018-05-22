@@ -1,8 +1,6 @@
 import Document, { Head, Main, NextScript } from 'next/document';
 import { extractCritical } from 'emotion-server';
 
-import stylesheet from '../styles/styles.css';
-
 export default class MyDocument extends Document {
   static async getInitialProps({ renderPage }) {
     const page = renderPage();
@@ -30,7 +28,6 @@ export default class MyDocument extends Document {
           />
           <meta name="theme-color" content="#000" />
           <style dangerouslySetInnerHTML={{ __html: this.props.css }} />
-          <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
           <link rel="manifest" href="/static/manifest.json" />
           <link
             href="https://fonts.googleapis.com/css?family=Candal|Monoton|Mr+Dafoe|Permanent+Marker|Righteous|Titillium+Web:900"

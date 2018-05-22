@@ -112,7 +112,7 @@ export const Date = styled('h3')(
 
 export const NameContainer = styled('div')(
   {
-    borderWidth: '1vw',
+    borderWidth: '0.8vw',
     background: 'black',
     position: 'absolute',
     borderRadius: '50%',
@@ -124,16 +124,16 @@ export const NameContainer = styled('div')(
       boxShadow: '0 0 50px hotpink',
       content: '""',
       position: 'absolute',
-      top: 'calc(-1 * 1vw)',
-      left: 'calc(-1 * 1vw)',
-      height: 'calc(100% + 1vw * 2)',
-      width: 'calc(100% + 1vw * 2)',
+      top: 'calc(-1 * 0.8vw)',
+      left: 'calc(-1 * 0.8vw)',
+      height: 'calc(100% + 0.8vw * 2)',
+      width: 'calc(100% + 0.8vw * 2)',
       background:
         'linear-gradient(60deg, hotpink, #ff0084, #f80759, #5073b8, #1098ad, #07b39b, #6fba82)',
       borderRadius: '50%',
       zIndex: 1,
-      WebkitAnimation: `${bounce} 3s ease alternate infinite`,
-      animation: `${bounce} 10s ease alternate infinite`,
+      WebkitAnimation: `${bounce} 4s ease alternate infinite`,
+      animation: `${bounce} 4s ease alternate infinite`,
       backgroundSize: '300% 300%'
     }
   },
@@ -143,8 +143,9 @@ export const NameContainer = styled('div')(
 export const Name = styled('h1')(
   {
     position: 'absolute',
+    width: 665,
     margin: '0px',
-    fontFamily: 'Mr Dafoe',
+    fontFamily: 'Streamster',
     color: '#F975F7',
     transform: 'rotate(-15deg)',
 
@@ -158,8 +159,9 @@ export const Name = styled('h1')(
 
 export const Stats = styled('div')(
   {
+    width: 375,
     paddingTop: 100,
-    paddingBottom: 60,
+    paddingBottom: 100,
     marginRight: 115,
     position: 'relative',
     display: 'flex',
@@ -224,9 +226,8 @@ export const TheStats = styled('h3')({
   position: 'absolute',
   fontFamily: 'Monoton',
   fontVariant: 'small-caps',
-  top: 80,
-  right: 400,
-
+  marginLeft: 100,
+  marginTop: 35,
   fontSize: 60,
   WebkitTransform: 'skew(-15deg,-15deg)',
   backgroundImage: '-webkit-linear-gradient(#FF0FF8 0%,  #F9F9F7 100%)',

@@ -1,4 +1,5 @@
 import * as React from 'react';
+
 import {
   Main,
   IntrinsicContainer,
@@ -17,14 +18,8 @@ import {
   DateContainer,
   StatsContainer
 } from './styles';
-import ReactRevealText from 'react-reveal-text';
-import { injectGlobal } from 'react-emotion';
 
-injectGlobal`
-  html, body {
-    margin: 0;
-  }
-`;
+import styles from '../styles/styles';
 
 export default class Home extends React.Component {
   constructor() {
@@ -43,21 +38,13 @@ export default class Home extends React.Component {
         <Main>
           <DateContainer>
             <Born>BORN</Born>
-            <Date fontSize={'80px'}>
-              <ReactRevealText show={this.state.show} delayMin={500}>
-                May 6th, 2018
-              </ReactRevealText>
-            </Date>
+            <Date fontSize={'80px'}>May 6th, 2018</Date>
           </DateContainer>
           <Container>
             <IntrinsicContainer>
               <NameContainer>
                 <Border>
-                  <Name fontSize={'150px'}>
-                    <ReactRevealText show={this.state.show} delayMin={1200}>
-                      Eleanor
-                    </ReactRevealText>
-                  </Name>
+                  <Name fontSize={'150px'}>Eleanor Ray</Name>
                 </Border>
               </NameContainer>
             </IntrinsicContainer>

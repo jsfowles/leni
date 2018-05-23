@@ -38,25 +38,25 @@ export default class Home extends React.Component {
         <Main>
           <DateContainer>
             <Born>BORN</Born>
-            <Date fontSize={'80px'}>May 6th, 2018</Date>
+            <Date>May 6th, 2018</Date>
           </DateContainer>
           <Container>
             <IntrinsicContainer>
               <NameContainer>
                 <Border>
-                  <Name fontSize={'150px'}>Eleanor Ray</Name>
+                  <Name>Eleanor Ray</Name>
                 </Border>
               </NameContainer>
             </IntrinsicContainer>
           </Container>
           <StatsContainer>
             <Stats>
-              <StatsBody fontSize={'100px'}>STATS</StatsBody>
+              <StatsBody>STATS</StatsBody>
               <Red>I</Red>
               <Green>I</Green>
               <Blue>I</Blue>
             </Stats>
-            <TheStats>4lbs. 6oz</TheStats>
+            <TheStats>4lbs. 11oz</TheStats>
           </StatsContainer>
         </Main>
       </React.Fragment>

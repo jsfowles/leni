@@ -1,5 +1,4 @@
 import * as React from 'react';
-import emotionNormalize from 'emotion-normalize';
 import { injectGlobal } from 'emotion';
 
 /* eslint-disable no-unused-expressions */

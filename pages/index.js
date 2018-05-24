@@ -16,7 +16,8 @@ import {
   Green,
   Blue,
   DateContainer,
-  StatsContainer
+  StatsContainer,
+  RandomDiv
 } from './styles';
 
 import styles from '../styles/styles';

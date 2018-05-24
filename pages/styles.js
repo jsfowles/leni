@@ -51,13 +51,15 @@ export const Container = styled('div')({
 });
 
 export const DateContainer = styled('div')({
-  margin: '0 20px',
-  paddingTop: '60px',
-  paddingBottom: '120px',
-  height: 200,
+  paddingBottom: 60,
+  position: 'relative',
   display: 'flex',
   justifyContent: 'center',
-  alignItems: 'center'
+  alignItems: 'center',
+
+  [DESKTOP]: {
+    paddingBottom: 180
+  }
 });
 
 export const StatsContainer = styled('div')({
@@ -66,7 +68,8 @@ export const StatsContainer = styled('div')({
   justifyContent: 'center',
   alignItems: 'center',
   margin: '0 20px',
-  marginBottom: 100
+
+  [DESKTOP]: {}
 });
 
 export const Born = styled('h1')({
@@ -177,13 +180,17 @@ export const Name = styled('h1')({
 export const Stats = styled('h1')({
   justifyContent: 'center',
   position: 'relative',
-  paddingTop: 50,
+  paddingTop: 60,
   paddingBottom: 100,
   fontSize: 40,
   position: 'relative',
   display: 'flex',
   WebkitTextFillColor: 'transparent',
-  fontFamily: 'Righteous'
+  fontFamily: 'Righteous',
+
+  [DESKTOP]: {
+    paddingTop: 160
+  }
 });
 
 export const StatsBody = styled('div')({
@@ -200,22 +207,7 @@ export const StatsBody = styled('div')({
 });
 
 export const Main = styled('div')({
-  background: 'black',
-  overflow: 'hidden',
-  position: 'relative',
-  overflow: 'hidden',
-  height: '100%',
-  backgroundImage: 'url("../static/radpack_14-min.jpg")',
-  backgroundSize: 'cover',
-  backgroundPosition: 'center',
-
-  '&:after': {
-    content: '""',
-    display: 'block',
-    height: 0,
-    clear: 'both',
-    visibility: 'hidden'
-  }
+  padding: '60px 0'
 });
 
 export const Red = styled('span')({
@@ -229,6 +221,10 @@ export const Red = styled('span')({
   [DESKTOP]: {
     fontSize: 100
   }
+});
+
+export const RandomDiv = styled('div')({
+  height: '100%'
 });
 
 export const Green = styled('span')({
@@ -263,22 +259,20 @@ export const TheStats = styled('h3')({
   fontFamily: 'Monoton',
   fontVariant: 'small-caps',
   whiteSpace: 'nowrap',
-
-  marginLeft: 60,
-  marginTop: 25,
+  marginBottom: 0,
+  marginLeft: 80,
+  marginTop: 10,
   WebkitTransform: 'skew(-15deg,-15deg)',
   backgroundImage: '-webkit-linear-gradient(#FF0FF8 0%,  #F9F9F7 100%)',
   WebkitBackgroundClip: 'text',
   WebkitTextFillColor: 'transparent',
-
   WebkitFilter: 'drop-shadow(2px 2px 20px #f008b7)',
-
   fontSize: 40,
 
   [DESKTOP]: {
     fontSize: 80,
-    marginLeft: 100,
-    marginTop: 35
+    marginLeft: 130,
+    marginTop: 80
   },
 
   '&:after': {

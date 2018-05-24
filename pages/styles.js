@@ -71,6 +71,8 @@ export const StatsContainer = styled('div')({
 
 export const Born = styled('h1')({
   width: 375,
+  display: 'flex',
+  justifyContent: 'center',
   position: 'relative',
   backgroundImage:
     '-webkit-linear-gradient(#378DBC 0%, #B6E8F1 46%, #ffffff 50%, #32120E 54%, #FFC488 58%, #582C11 90%, #EC9B4E 100%)',
@@ -105,8 +107,10 @@ export const Date = styled('h3')({
   position: 'absolute',
   margin: '0px',
   fontFamily: 'Mr Dafoe',
+  whiteSpace: 'nowrap',
+
   color: '#EB219B',
-  marginLeft: 80,
+  marginLeft: 60,
   marginTop: 25,
   transform: 'rotate(-15deg)',
   fontSize: 40,
@@ -170,9 +174,10 @@ export const Name = styled('h1')({
   }
 });
 
-export const Stats = styled('div')({
-  width: 375,
-  paddingTop: 100,
+export const Stats = styled('h1')({
+  justifyContent: 'center',
+  position: 'relative',
+  paddingTop: 50,
   paddingBottom: 100,
   fontSize: 40,
   position: 'relative',
@@ -181,7 +186,7 @@ export const Stats = styled('div')({
   fontFamily: 'Righteous'
 });
 
-export const StatsBody = styled('h1')({
+export const StatsBody = styled('div')({
   WebkitBackgroundClip: 'text',
   margin: 0,
   backgroundImage:
@@ -198,10 +203,19 @@ export const Main = styled('div')({
   background: 'black',
   overflow: 'hidden',
   position: 'relative',
+  overflow: 'hidden',
   height: '100%',
   backgroundImage: 'url("../static/radpack_14-min.jpg")',
   backgroundSize: 'cover',
-  backgroundPosition: 'center'
+  backgroundPosition: 'center',
+
+  '&:after': {
+    content: '""',
+    display: 'block',
+    height: 0,
+    clear: 'both',
+    visibility: 'hidden'
+  }
 });
 
 export const Red = styled('span')({
@@ -248,7 +262,9 @@ export const TheStats = styled('h3')({
   position: 'absolute',
   fontFamily: 'Monoton',
   fontVariant: 'small-caps',
-  marginLeft: 80,
+  whiteSpace: 'nowrap',
+
+  marginLeft: 60,
   marginTop: 25,
   WebkitTransform: 'skew(-15deg,-15deg)',
   backgroundImage: '-webkit-linear-gradient(#FF0FF8 0%,  #F9F9F7 100%)',
@@ -261,8 +277,8 @@ export const TheStats = styled('h3')({
 
   [DESKTOP]: {
     fontSize: 80,
-    marginLeft: 220,
-    marginTop: 25
+    marginLeft: 100,
+    marginTop: 35
   },
 
   '&:after': {

@@ -26,7 +26,7 @@ export default class MyDocument extends Document {
             name="viewport"
             content="initial-scale=1.0, width=device-width"
           />
-          <meta name="theme-color" content="#000" />
+
           <style dangerouslySetInnerHTML={{ __html: this.props.css }} />
           <link rel="manifest" href="/static/manifest.json" />
           <link

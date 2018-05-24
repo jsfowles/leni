@@ -34,32 +34,30 @@ export default class Home extends React.Component {
   }
   render() {
     return (
-      <React.Fragment>
-        <Main>
-          <DateContainer>
-            <Born>BORN</Born>
-            <Date>May 6th, 2018</Date>
-          </DateContainer>
-          <Container>
-            <IntrinsicContainer>
-              <NameContainer>
-                <Border>
-                  <Name>Eleanor Ray</Name>
-                </Border>
-              </NameContainer>
-            </IntrinsicContainer>
-          </Container>
-          <StatsContainer>
-            <Stats>
-              <StatsBody>STATS</StatsBody>
-              <Red>I</Red>
-              <Green>I</Green>
-              <Blue>I</Blue>
-            </Stats>
-            <TheStats>4lbs. 11oz</TheStats>
-          </StatsContainer>
-        </Main>
-      </React.Fragment>
+      <Main>
+        <DateContainer>
+          <Born>BORN</Born>
+          <Date>May 6th, 2018</Date>
+        </DateContainer>
+        <Container>
+          <IntrinsicContainer>
+            <NameContainer>
+              <Border>
+                <Name>Eleanor Ray</Name>
+              </Border>
+            </NameContainer>
+          </IntrinsicContainer>
+        </Container>
+        <StatsContainer>
+          <Stats>
+            <StatsBody>STATS</StatsBody>
+            <Red>I</Red>
+            <Green>I</Green>
+            <Blue>I</Blue>
+          </Stats>
+          <TheStats>4lbs. 11oz</TheStats>
+        </StatsContainer>
+      </Main>
     );
   }
 }

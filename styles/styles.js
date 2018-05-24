@@ -12,7 +12,13 @@ injectGlobal`
   font-stretch: normal
 }
 
-  html, body {
-    margin: 0;
-  }
+html, body {
+  margin: 0;
+  height: 100%;
+  padding: 0;
+}
+
+#__next {
+  height: 100%;
+}
 `;

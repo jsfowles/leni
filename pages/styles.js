@@ -75,28 +75,24 @@ export const StatsContainer = styled('div')({
 export const Born = styled('h1')({
   justifyContent: 'center',
   position: 'relative',
-  paddingTop: 90,
+  paddingTop: 60,
   paddingBottom: 100,
-
+  fontSize: 40,
   position: 'relative',
   display: 'flex',
-  WebkitTextFillColor: 'transparent'
+  WebkitTextFillColor: 'transparent',
+  fontFamily: 'Righteous',
+  marginRight: 60
 });
 
 export const BornBody = styled('div')({
-  width: 375,
-  display: 'flex',
-  justifyContent: 'center',
+  WebkitBackgroundClip: 'text',
+  margin: 0,
   backgroundImage:
     '-webkit-linear-gradient(#378DBC 0%, #B6E8F1 46%, #ffffff 50%, #32120E 54%, #FFC488 58%, #582C11 90%, #EC9B4E 100%)',
-  WebkitBackgroundClip: 'text',
-  WebkitTextFillColor: 'transparent',
-  WebkitTextStroke: '4px #f5f5f5',
+  WebkitFilter: 'drop-shadow(2px 2px 15px #3F59F4)',
   fontSize: 90,
-  fontFamily: 'Titillium Web',
-  fontStyle: 'italic',
-  lineHeight: 1,
-  marginRight: 0,
+
   [DESKTOP]: {
     fontSize: 120,
     marginRight: 100
@@ -184,6 +180,7 @@ export const Stats = styled('h1')({
   display: 'flex',
   WebkitTextFillColor: 'transparent',
   fontFamily: 'Righteous',
+  marginRight: 60,
 
   [DESKTOP]: {
     paddingTop: 160
@@ -212,14 +209,14 @@ export const Red = styled('span')({
   right: -35,
   paddingRight: 10,
   fontFamily: 'Righteous',
-  fontSize: 70,
+  fontSize: 90,
   color: '#F10C20',
   WebkitTextFillColor: '#F10C20',
   WebkitTextStroke: 0,
   WebkitFilter: 'drop-shadow(2px 2px 15px #F10C20)',
   fontStyle: 'italic',
   [DESKTOP]: {
-    fontSize: 100
+    fontSize: 120
   }
 });
 
@@ -233,14 +230,14 @@ export const Green = styled('span')({
   right: -55,
 
   fontFamily: 'Righteous',
-  fontSize: 70,
+  fontSize: 90,
   color: '#6BFF2B',
   WebkitTextFillColor: '#6BFF2B',
   WebkitTextStroke: 0,
   WebkitFilter: 'drop-shadow(2px 2px 15px #6BFF2B)',
   fontStyle: 'italic',
   [DESKTOP]: {
-    fontSize: 100
+    fontSize: 120
   }
 });
 
@@ -250,7 +247,7 @@ export const Blue = styled('span')({
   right: -75,
 
   fontFamily: 'Righteous',
-  fontSize: 70,
+  fontSize: 90,
   color: '#3F59F4',
   WebkitTextFillColor: '#3F59F4',
   WebkitTextStroke: 0,
@@ -258,7 +255,7 @@ export const Blue = styled('span')({
   fontStyle: 'italic',
 
   [DESKTOP]: {
-    fontSize: 100
+    fontSize: 120
   }
 });
 

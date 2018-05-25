@@ -73,10 +73,20 @@ export const StatsContainer = styled('div')({
 });
 
 export const Born = styled('h1')({
+  justifyContent: 'center',
+  position: 'relative',
+  paddingTop: 90,
+  paddingBottom: 100,
+
+  position: 'relative',
+  display: 'flex',
+  WebkitTextFillColor: 'transparent'
+});
+
+export const BornBody = styled('div')({
   width: 375,
   display: 'flex',
   justifyContent: 'center',
-  position: 'relative',
   backgroundImage:
     '-webkit-linear-gradient(#378DBC 0%, #B6E8F1 46%, #ffffff 50%, #32120E 54%, #FFC488 58%, #582C11 90%, #EC9B4E 100%)',
   WebkitBackgroundClip: 'text',
@@ -87,22 +97,9 @@ export const Born = styled('h1')({
   fontStyle: 'italic',
   lineHeight: 1,
   marginRight: 0,
-
   [DESKTOP]: {
     fontSize: 120,
     marginRight: 100
-  },
-
-  '&:before': {
-    content: '"BORN"',
-    position: 'absolute',
-    left: 0,
-    top: 0,
-    zIndex: 10,
-    backgroundPosition: '-680px 0',
-    WebkitBackgroundClip: 'text',
-    WebkitTextStroke: 0,
-    paddingRight: 300
   }
 });
 
@@ -199,10 +196,10 @@ export const StatsBody = styled('div')({
   backgroundImage:
     '-webkit-linear-gradient(#C3BFB4 0%, #FDFCFA 50%, #E8E7E5 51%, #757172 52%, #E8E9DB 100%)',
   WebkitFilter: 'drop-shadow(2px 2px 15px #3F59F4)',
-  fontSize: 70,
+  fontSize: 90,
 
   [DESKTOP]: {
-    fontSize: 100
+    fontSize: 120
   }
 });
 
@@ -211,6 +208,9 @@ export const Main = styled('div')({
 });
 
 export const Red = styled('span')({
+  position: 'absolute',
+  right: -35,
+  paddingRight: 10,
   fontFamily: 'Righteous',
   fontSize: 70,
   color: '#F10C20',
@@ -228,6 +228,10 @@ export const RandomDiv = styled('div')({
 });
 
 export const Green = styled('span')({
+  position: 'absolute',
+  paddingRight: 10,
+  right: -55,
+
   fontFamily: 'Righteous',
   fontSize: 70,
   color: '#6BFF2B',
@@ -241,6 +245,10 @@ export const Green = styled('span')({
 });
 
 export const Blue = styled('span')({
+  position: 'absolute',
+  paddingRight: 10,
+  right: -75,
+
   fontFamily: 'Righteous',
   fontSize: 70,
   color: '#3F59F4',

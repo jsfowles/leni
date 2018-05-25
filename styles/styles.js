@@ -42,7 +42,9 @@ time, mark, audio, video {
 body {
   background: url("../static/radpack_14-min.jpg") no-repeat center center fixed;
   background-size: cover;
-
+  -o-background-size: cover;
+  -moz-background-size: cover;
+    -webkit-background-size:cover;
   line-height: 1;
 }
 `;

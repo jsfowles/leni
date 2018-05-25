@@ -1,6 +1,7 @@
 import * as React from 'react';
 
 import {
+  BornBody,
   Main,
   IntrinsicContainer,
   NameContainer,
@@ -37,7 +38,9 @@ export default class Home extends React.Component {
     return (
       <Main>
         <DateContainer>
-          <Born>BORN</Born>
+          <Born>
+            <BornBody>BORN</BornBody>
+          </Born>
           <Date>May 6th, 2018</Date>
         </DateContainer>
         <Container>

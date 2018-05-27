@@ -67,9 +67,7 @@ export const StatsContainer = styled('div')({
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  margin: '0 20px',
-
-  [DESKTOP]: {}
+  margin: '0 20px'
 });
 
 export const Born = styled('h1')({

@@ -58,23 +58,25 @@ export const DateContainer = styled('div')({
   alignItems: 'center',
 
   [DESKTOP]: {
-    paddingBottom: 180
+    paddingBottom: 160
   }
 });
 
 export const StatsContainer = styled('div')({
+  paddingTop: 60,
   position: 'relative',
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  margin: '0 20px'
+  margin: '0 20px',
+  [DESKTOP]: {
+    paddingTop: 120
+  }
 });
 
 export const Born = styled('h1')({
   justifyContent: 'center',
   position: 'relative',
-  paddingTop: 60,
-  paddingBottom: 100,
   fontSize: 40,
   position: 'relative',
   display: 'flex',
@@ -171,18 +173,12 @@ export const Name = styled('h1')({
 export const Stats = styled('h1')({
   justifyContent: 'center',
   position: 'relative',
-  paddingTop: 60,
-  paddingBottom: 100,
   fontSize: 40,
   position: 'relative',
   display: 'flex',
   WebkitTextFillColor: 'transparent',
   fontFamily: 'Righteous',
-  marginRight: 60,
-
-  [DESKTOP]: {
-    paddingTop: 160
-  }
+  marginRight: 60
 });
 
 export const StatsBody = styled('div')({
